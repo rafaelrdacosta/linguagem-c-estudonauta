@@ -18,9 +18,15 @@ void main(){
     printf("======== DADOS CADASTRAIS ========\n");
 
     //Entrada do nome do usuário
-    printf("Qual é o seu nome? ");
-    gets(nome);
-
+    while(1){
+        printf("Qual é o seu nome? ");
+        gets(nome);
+        if(strlen(nome)>=3){
+            break;
+        }else{
+            printf("<<ERRO>> Nome inválido! Digite novamente.\n");
+        }
+    }
     //Entrada e validação da idade
     while(1){
         printf("Quantos anos você tem? ");
@@ -33,7 +39,7 @@ void main(){
     }
     //Entrada e validação do peso
     while(1){
-        printf("Quantos é o seu peso? ");
+        printf("Quantos é o seu peso (Kg)? ");
         scanf("%f", &peso);
         if (peso >= 0){
            break;
