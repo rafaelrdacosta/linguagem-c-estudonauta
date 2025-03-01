@@ -27,16 +27,16 @@ void main(){
 	while(1){
         printf("Preço de(o) %s: R$ ", nome);
         scanf("%f", &preco);
-        if(preco >= 0){
+        if(preco > 0){
             break;
         } else{
 			printf("<<ERRO>> Preço inválido! Tente novamente.\n");
 		}
 	}
     while(1){
-        printf("Desconto (%%): ");
+        printf("Desconto(%%): ");
         scanf("%f", &desconto);
-        if(desconto >= 0){
+        if(desconto > 0){
             break;
         } else{
 			printf("<<ERRO>> Valor inválido! Tente novamente.\n");
@@ -46,6 +46,6 @@ void main(){
 	n_preco = preco * (1 - (desconto/100));
 
 	//Exibição dos resultados
-	printf("O produto %s custava R$ %.2f,\nmas com %.2f%% de desconto, \npassa a custar R$ %.2f.\n", nome, preco, desconto, n_preco);
+	printf("O produto %s custava R$ %.2f.\nPorém com %.2f%% de desconto, \npassou a custar R$ %.2f.\n", nome, preco, desconto, n_preco);
     printf("==============================\n");
 }

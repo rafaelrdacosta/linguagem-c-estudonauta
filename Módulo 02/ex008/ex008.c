@@ -7,7 +7,7 @@ void main(){
     setlocale(LC_ALL, "Portuguese");
 
     //Cabeçalho do programa
-    printf("============ ALFABETO ===========\n");
+    printf("============ ALFABETO ============\n");
 
     //Declaração de variáveis
     char letra;
@@ -19,5 +19,5 @@ void main(){
     //Exibição do resultado
     printf("Antes da letra %c temos a letra %c.\n", letra, letra - 1);
     printf("Depois da letra %c temos a letra %c.\n", letra, letra + 1);
-    printf("=================================\n");
+    printf("==================================\n");
 }

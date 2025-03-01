@@ -43,7 +43,7 @@ void main(){
     media = (n1 + n2)/2;
 
     //Exibição dos resultados
-    printf("O aluno %s tirou notas %.2f e %.2f\n e ficou com média %.2f.\n", nome, n1, n2, media);
+    printf("O aluno %s tirou\nnotas %.1f e %.1f\ne ficou com média %.2f.\n", nome, n1, n2, media);
     printf("========================\n");
 
 }
